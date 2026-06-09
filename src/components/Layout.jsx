@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import Navbar from './Navbar'
 
 function Layout() {
@@ -5,7 +6,7 @@ function Layout() {
     <>
       <Navbar />
       <main>
-        <p>Contenido principal del portal.</p>
+        <Outlet />
       </main>
     </>
   )

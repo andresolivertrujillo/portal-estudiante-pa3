@@ -10,7 +10,7 @@ function CourseDetailPage() {
 
   if (!course) {
     return (
-      <section>
+      <section className="page">
         <h1>Curso no encontrado</h1>
         <Link to="/cursos">Volver a cursos</Link>
       </section>
@@ -20,20 +20,24 @@ function CourseDetailPage() {
   const isSelected = selectedCourses.some((item) => item.id === course.id)
 
   return (
-    <section>
+    <section className="page">
       <h1>{course.nombre}</h1>
-      <p>{course.descripcion}</p>
-      <p>Docente: {course.docente}</p>
-      <p>Creditos: {course.creditos}</p>
-      <p>Duracion: {course.duracion}</p>
-      <button
-        type="button"
-        onClick={() => agregarCurso(course)}
-        disabled={isSelected}
-      >
-        {isSelected ? 'Curso seleccionado' : 'Seleccionar curso'}
-      </button>
-      <Link to="/cursos">Volver a cursos</Link>
+      <article className="course-card">
+        <p>{course.descripcion}</p>
+        <p>Docente: {course.docente}</p>
+        <p>Creditos: {course.creditos}</p>
+        <p>Duracion: {course.duracion}</p>
+        <div className="course-actions">
+          <button
+            type="button"
+            onClick={() => agregarCurso(course)}
+            disabled={isSelected}
+          >
+            {isSelected ? 'Curso seleccionado' : 'Seleccionar curso'}
+          </button>
+          <Link to="/cursos">Volver a cursos</Link>
+        </div>
+      </article>
     </section>
   )
 }

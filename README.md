@@ -1,16 +1,28 @@
-# React + Vite
+# Portal del Estudiante - PA3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+Portal web que permite a los estudiantes explorar el catálogo de cursos disponibles, ver el detalle de cada curso y gestionar su selección de cursos.
 
-Currently, two official plugins are available:
+## Tecnologías usadas
+- React 19
+- React Router DOM 7
+- Vite
+- JavaScript ES6+
+- CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Instrucciones para instalar y ejecutar
 
-## React Compiler
+1. Clonar el repositorio:
+git clone https://github.com/andresolivertrujillo/portal-estudiante-pa3.git
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. Entrar a la carpeta:
+cd portal-estudiante-pa3
 
-## Expanding the ESLint configuration
+3. Instalar dependencias:
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. Ejecutar el proyecto:
+npm run dev
+
+5. Abrir en el navegador:
+http://localhost:5173
